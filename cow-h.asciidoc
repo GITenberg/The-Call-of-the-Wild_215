@@ -3,13 +3,13 @@ by Jack London
 v0.1 2015-04-05
 :doctype: book
 :copyright: CC0 or Public Domain
-:front-cover-image: image:front-cover.jpg[Front Cover,627,951]
+:front-cover-image: image:content/front-cover.jpg[Front Cover,627,951]
 
 
-include::chapters/chapter-01.asciidoc[]
-include::chapters/chapter-02.asciidoc[]
-include::chapters/chapter-03.asciidoc[]
-include::chapters/chapter-04.asciidoc[]
-include::chapters/chapter-05.asciidoc[]
-include::chapters/chapter-06.asciidoc[]
-include::chapters/chapter-07.asciidoc[]
+include::content/chapter-01.asciidoc[]
+include::content/chapter-02.asciidoc[]
+include::content/chapter-03.asciidoc[]
+include::content/chapter-04.asciidoc[]
+include::content/chapter-05.asciidoc[]
+include::content/chapter-06.asciidoc[]
+include::content/chapter-07.asciidoc[]
