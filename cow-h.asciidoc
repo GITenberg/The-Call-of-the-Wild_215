@@ -1,7 +1,9 @@
 = THE CALL OF THE WILD
 by Jack London
-:toc:
-
+v0.1 2015-04-05
+:doctype: book
+:copyright: CC0 or Public Domain
+:front-cover-image: image:front-cover.jpg[Front Cover,627,951]
 
 
 include::chapters/chapter-01.asciidoc[]
