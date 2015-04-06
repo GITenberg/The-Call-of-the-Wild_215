@@ -2,8 +2,6 @@ language: ruby
 before_install:
 - gem install asciidoctor-epub3 --pre
 script: asciidoctor-epub3 cow-h.asciidoc
-addons:
-  artifacts: true
 deploy:
   provider: releases
   api_key:
