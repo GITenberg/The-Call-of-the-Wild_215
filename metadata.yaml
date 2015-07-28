@@ -1,0 +1,36 @@
+_repo: The-Call-of-the-Wild_215
+creator:
+  author:
+    agent_name: London, Jack
+    alias: Chaney, John Griffith
+    birthdate: 1876
+    deathdate: 1916
+    gutenberg_agent_id: '120'
+    url: http://www.gutenberg.org/2009/agents/120
+    wikipedia: http://en.wikipedia.org/wiki/Jack_London
+gutenberg_bookshelf:
+- Movie Books
+- Banned Books from Anne Haight's list
+- Adventure
+- Best Books Ever Listings
+- Animals-Domestic
+gutenberg_issued: '2008-07-02'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '215'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Pet theft -- Fiction'
+- '!lcsh:Feral dogs -- Fiction'
+- '!lcsh:Sled dogs -- Fiction'
+- '!lcsh:Adventure stories'
+- '!lcsh:Nature stories'
+- '!lcsh:Animal welfare -- Fiction'
+- '!lcsh:Dogs -- Fiction'
+- '!lcsh:Klondike River Valley (Yukon) -- Fiction'
+- '!lcc:PS'
+title: The Call of the Wild
+url: http://www.gutenberg.org/ebooks/215
