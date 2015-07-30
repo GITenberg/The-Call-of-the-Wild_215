@@ -9,11 +9,11 @@ creator:
     url: http://www.gutenberg.org/2009/agents/120
     wikipedia: http://en.wikipedia.org/wiki/Jack_London
 gutenberg_bookshelf:
-- Movie Books
-- Banned Books from Anne Haight's list
-- Adventure
 - Best Books Ever Listings
+- Banned Books from Anne Haight's list
 - Animals-Domestic
+- Adventure
+- Movie Books
 gutenberg_issued: '2008-07-02'
 gutenberg_type: Text
 identifiers:
@@ -23,14 +23,14 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Pet theft -- Fiction'
 - '!lcsh:Feral dogs -- Fiction'
-- '!lcsh:Sled dogs -- Fiction'
+- '!lcsh:Klondike River Valley (Yukon) -- Fiction'
 - '!lcsh:Adventure stories'
+- '!lcsh:Sled dogs -- Fiction'
 - '!lcsh:Nature stories'
 - '!lcsh:Animal welfare -- Fiction'
-- '!lcsh:Dogs -- Fiction'
-- '!lcsh:Klondike River Valley (Yukon) -- Fiction'
+- '!lcsh:Pet theft -- Fiction'
 - '!lcc:PS'
+- '!lcsh:Dogs -- Fiction'
 title: The Call of the Wild
 url: http://www.gutenberg.org/ebooks/215
