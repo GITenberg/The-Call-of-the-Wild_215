@@ -1,0 +1,32 @@
+language: ruby
+before_install:
+- gem install asciidoctor tilt
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book book.asciidoc -o book.html
+- git clone https://github.com/gitenberg-dev/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
+- cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
+- cp cover.jpg OEBPS/cover.jpg
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- mv book.epub The-Call-of-the-Wild.epub
+branches:
+  only:
+  - master
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: LgzQxKG8X1RDtkw6LRK9VgWE6aes2p/u8SaFS4mSRX+7RDhl3seWa1BdbE0I6R3Ct328KTKy3z6ENJQLZn/qzMhvLxS1aYwvmhNY2lVWpXDOXfe7QJZzz0vAY7bkzlq8lZ1MXTnkGOy4+KQeczyw9iJ+Rii9BlWvZsyLkmm4WCecWOxIurfXivjDXylo3x58K6opZC7jPbVDZx1QxJbkTkOZxbWt2Hf/8jNN/2fJIuqW7WAZUULDKpt8jWRZWmY6YdKgj0l2ptcXGKp8kCgJw5ZOvkyPi2+QHDxyrEj1qx/6GYN2fUWJpkdPxWVvT2tCAIgbktElStJVSbUuLZVFe01Hn84UcibR320ehLoF8P/UnoC0q9yThDv/09yPTHGiVBIeGlSGqbPF+mPiM8t61j70hTR83gASyi82XlPf7JpoGjerLHz/Wa9EVb+lT52liJbxW2Knlxm/r/O2X9JJW95rFCTGT0ZF/w7zI102lynTlM6rHgZylwCGajltvb8dGJJGFOYbPM1mHifzTud46vPiEsk7bHKkW1FUM8X6CHdA/Jnbx2o/HrF0XoLJTblYERx1uvEA7sq/lmsCRVnc1jXkQ9U3bHkIrffppk886dN1Q966RvnP8I2wwSLw05NYUZNP/OFm0ZNS1wOxUcYLOB27Qq8KjwcT//ifGXYnPKw=
+  file: The-Call-of-the-Wild.epub
+  "on":
+    repo: GITenberg/The-Call-of-the-Wild_215
+addons:
+  apt:
+    packages:
+    - xsltproc
