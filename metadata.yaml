@@ -1,5 +1,5 @@
 _repo: The-Call-of-the-Wild_215
-_version: 0.0.2
+_version: 0.1.0
 covers:
 - attribution: Michael van Kekem, 2015
   cover_type: original
@@ -40,5 +40,6 @@ subjects:
 - '!lcsh: Sled dogs -- Fiction'
 - '!lcsh: Feral dogs -- Fiction'
 - '!lcsh: Adventure stories'
+- GITenberg
 title: The Call of the Wild
 url: http://www.gutenberg.org/ebooks/215
