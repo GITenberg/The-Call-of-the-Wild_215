@@ -1,0 +1,11 @@
+language: ruby
+before_install:
+- gem install asciidoctor-epub3 --pre
+script: asciidoctor-epub3 cow-h.asciidoc
+deploy:
+  provider: releases
+  api_key:
+    secure: JDeanY4M9MlZx78wn90E4k5rHCoH2YCuWFHl+TNCSi0/QfomYDG1M+3ZPAjShaPYb6nfKb+5v+wIkm0WGUtWJY+EuTHRrREGlrxWmCOKEf2TWhWxgq6LdndZY1mFqbkFR19G4piOdbeZNdvSuF2n1FAu3DQRrnpyc7xonjwu74s=
+  file: cow-h.epub
+  on:
+    repo: sethwoodworth/The-Call-of-the-Wild_215
